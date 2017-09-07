@@ -7,13 +7,13 @@ app.use(morgan('combined'));
 
 
 app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+  res.send(path.join(__dirname, 'ui', 'index.html'));
 });
 app.get('/article-one', function (req, res) {
-  res.sendFile(path.join('article one is requested and will be se'));
+  res.send(path.join('article one is requested and will be se'));
 });
 app.get('/article-two', function (req, res) {
-  res.sendFile(path.join('article two is requested and will be se'));
+  res.send(path.join('article two is requested and will be se'));
 });
 app.get('/article-three', function (req, res) {
   res.sendFile(path.join('article three is requested and will be se'));
