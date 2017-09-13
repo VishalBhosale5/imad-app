@@ -20,7 +20,7 @@ app.get('/test-db', function (req, res) {
 
     if(err)
     {
-        req.status(500).send(err.toString());
+        res.status(500).send(err.toString());
         
     }
     else
